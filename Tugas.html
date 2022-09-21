@@ -403,6 +403,12 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="tugas-1">
 <h1>Tugas 1<a class="headerlink" href="#tugas-1" title="Permalink to this headline">#</a></h1>
+<p>Dissimilarity merupakan mencari jarak antara dua objek atau lebih dengan rentang 0 hingga 1.</p>
+<p>Dissimilarity dapat diukur dengan menggunakan pengukuran jarak:</p>
+<ol class="simple">
+<li><p>Euclidean Distance</p></li>
+<li><p>Minkowski Distance</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -427,7 +433,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-aca10528-1ceb-4b89-8f10-f586dd168d2d">
+  <div id="df-180ea509-796c-4e10-a46c-40e604e5e298">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -763,7 +769,7 @@ title="Print to PDF"
 </table>
 <p>232 rows × 66 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-aca10528-1ceb-4b89-8f10-f586dd168d2d')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-180ea509-796c-4e10-a46c-40e604e5e298')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -814,12 +820,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-aca10528-1ceb-4b89-8f10-f586dd168d2d button.colab-df-convert');
+          document.querySelector('#df-180ea509-796c-4e10-a46c-40e604e5e298 button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-aca10528-1ceb-4b89-8f10-f586dd168d2d');
+          const element = document.querySelector('#df-180ea509-796c-4e10-a46c-40e604e5e298');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -848,7 +854,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d1db91ca-f47c-45d2-bced-bab6400bf4f9">
+  <div id="df-dc60b2b8-2668-48d5-bd1d-f9c3ff00e25f">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -901,7 +907,7 @@ title="Print to PDF"
   </tbody>
 </table>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d1db91ca-f47c-45d2-bced-bab6400bf4f9')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-dc60b2b8-2668-48d5-bd1d-f9c3ff00e25f')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -952,12 +958,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d1db91ca-f47c-45d2-bced-bab6400bf4f9 button.colab-df-convert');
+          document.querySelector('#df-dc60b2b8-2668-48d5-bd1d-f9c3ff00e25f button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d1db91ca-f47c-45d2-bced-bab6400bf4f9');
+          const element = document.querySelector('#df-dc60b2b8-2668-48d5-bd1d-f9c3ff00e25f');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1010,6 +1016,13 @@ title="Print to PDF"
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="tugas-2">
 <h1>Tugas 2<a class="headerlink" href="#tugas-2" title="Permalink to this headline">#</a></h1>
+<p>Diskritisasi : merubah tipe data numerik menjadi kategorikal.</p>
+<ul class="simple">
+<li><p>Mencari rentang nilai : nilai max dan nilai min</p></li>
+<li><p>Menjadikan beberapa rentang kategori (ex: A, B, C,..)</p></li>
+<li><p>w = Xmax-Xmin/K(kategori)</p></li>
+<li><p>Vi = Xmin + iw, i=1, …, i=k-1</p></li>
+</ul>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1034,7 +1047,7 @@ title="Print to PDF"
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-eacbb9e4-d62a-4db1-9d37-87188cb2ca65">
+  <div id="df-3b151c41-95fe-4250-8037-3e441d964fcf">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1106,7 +1119,7 @@ title="Print to PDF"
 </table>
 <p>150 rows × 1 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-eacbb9e4-d62a-4db1-9d37-87188cb2ca65')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-3b151c41-95fe-4250-8037-3e441d964fcf')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1157,12 +1170,12 @@ title="Print to PDF"
 
       <script>
         const buttonEl =
-          document.querySelector('#df-eacbb9e4-d62a-4db1-9d37-87188cb2ca65 button.colab-df-convert');
+          document.querySelector('#df-3b151c41-95fe-4250-8037-3e441d964fcf button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-eacbb9e4-d62a-4db1-9d37-87188cb2ca65');
+          const element = document.querySelector('#df-3b151c41-95fe-4250-8037-3e441d964fcf');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1320,6 +1333,14 @@ Name: petal_width, Length: 150, dtype: float64
 </section>
 <section class="tex2jax_ignore mathjax_ignore" id="tugas-3">
 <h1>Tugas 3<a class="headerlink" href="#tugas-3" title="Permalink to this headline">#</a></h1>
+<p>Algoritma k-nearest neighbors (KNN) adalah metode klasifikasi data untuk memperkirakan kemungkinan bahwa titik data akan menjadi anggota dari satu kelompok atau kelompok yang lain berdasarkan kelompok mana titik data terdekat dengannya.</p>
+<ol class="simple">
+<li><p>Mencari nilai K</p></li>
+<li><p>Hitung jarak antara data uji dengan data latih</p></li>
+<li><p>Mengurutkan jarak dari yang terkecil hingga terbesar</p></li>
+<li><p>Mengambil data sebanyak K terdekat</p></li>
+<li><p>Memilih kelas mayor</p></li>
+</ol>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -1346,7 +1367,7 @@ Name: petal_width, Length: 150, dtype: float64
 </div>
 <div class="cell_output docutils container">
 <div class="output text_html">
-  <div id="df-d8683768-5bf0-41a7-bb9c-531172e61891">
+  <div id="df-e4de98a0-38ef-41e3-a115-f8932d1bc04d">
     <div class="colab-df-container">
       <div>
 <style scoped>
@@ -1466,7 +1487,7 @@ Name: petal_width, Length: 150, dtype: float64
 </table>
 <p>150 rows × 5 columns</p>
 </div>
-      <button class="colab-df-convert" onclick="convertToInteractive('df-d8683768-5bf0-41a7-bb9c-531172e61891')"
+      <button class="colab-df-convert" onclick="convertToInteractive('df-e4de98a0-38ef-41e3-a115-f8932d1bc04d')"
               title="Convert this dataframe to an interactive table."
               style="display:none;">
 
@@ -1517,12 +1538,12 @@ Name: petal_width, Length: 150, dtype: float64
 
       <script>
         const buttonEl =
-          document.querySelector('#df-d8683768-5bf0-41a7-bb9c-531172e61891 button.colab-df-convert');
+          document.querySelector('#df-e4de98a0-38ef-41e3-a115-f8932d1bc04d button.colab-df-convert');
         buttonEl.style.display =
           google.colab.kernel.accessAllowed ? 'block' : 'none';
 
         async function convertToInteractive(key) {
-          const element = document.querySelector('#df-d8683768-5bf0-41a7-bb9c-531172e61891');
+          const element = document.querySelector('#df-e4de98a0-38ef-41e3-a115-f8932d1bc04d');
           const dataTable =
             await google.colab.kernel.invokeFunction('convertToInteractive',
                                                      [key], {});
@@ -1635,9 +1656,7 @@ the neighbors are: [57, 8, 42, 93]
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
-</pre></div>
-</div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[(49, 0.09999999999999987), (35, 0.1414213562373093), (7, 0.22360679774997896), (40, 0.2236067977499791), (39, 0.24494897427831766)]
+[(49, 0.09999999999999987), (35, 0.1414213562373093), (7, 0.22360679774997896), (40, 0.2236067977499791), (39, 0.24494897427831766)]
 [(0, 0.24494897427831777), (1, 0.3316624790355397), (2, 0.31622776601683766), (3, 0.48989794855663577), (4, 0.31622776601683816)]
 {&#39;Iris-setosa&#39;: 0, &#39;Iris-versicolor&#39;: 0, &#39;Iris-virginica&#39;: 0, &#39;setosa&#39;: 15}
 [(&#39;setosa&#39;, 15), (&#39;Iris-setosa&#39;, 0), (&#39;Iris-versicolor&#39;, 0), (&#39;Iris-virginica&#39;, 0)]
